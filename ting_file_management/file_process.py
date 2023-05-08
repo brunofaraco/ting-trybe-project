@@ -7,7 +7,7 @@ def process(path_file, instance: Queue):
     file = txt_importer(path_file)
     files_read = []
 
-    for i in range(instance.__len__()):
+    for i in range(len(instance)):
         file_name = instance.search(i)["nome_do_arquivo"]
         files_read.append(file_name)
 
@@ -23,7 +23,7 @@ def process(path_file, instance: Queue):
 
 
 def remove(instance: Queue):
-    if instance.__len__() == 0:
+    if len(instance) == 0:
         sys.stdout.write("Não há elementos\n")
 
     else:
