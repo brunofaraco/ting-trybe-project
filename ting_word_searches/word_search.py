@@ -8,4 +8,6 @@ def exists_word(word: str, instance: Queue):
 
 
 def search_by_word(word: str, instance: Queue):
-    """Aqui irá sua implementação"""
+    words_found = []
+
+    return words_found
